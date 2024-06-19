@@ -24,13 +24,13 @@ function sendemail_verify($name, $email, $verify_token)
     // $mail->SMTPDebug = 3;                                    //Enable verbose debug output
 
     $mail->Host       = "smtp.gmail.com";                       //Set the SMTP server to send through
-    $mail->Username   = "panekin52@gmail.com";                  //SMTP username
-    $mail->Password   = "dlnp pfuv qfok orcf";                     //SMTP password
+    $mail->Username   = "email mu";                  //SMTP username
+    $mail->Password   = "pw mu";                     //SMTP password
 
     $mail->SMTPSecure = "tls";                                  //Enable implicit TLS encryption
     $mail->Port       = 587;     
 
-    $mail->setFrom("panekin52@gmail.com", $name);
+    $mail->setFrom("email mu", $name);
     $mail->addAddress($email);                                  //Add a recipient
 
     $mail->isHTML(true); 
